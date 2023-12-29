@@ -1,0 +1,72 @@
+#title {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-stretch: wider;
+}
+
+body {
+    background-color: rgb(25, 25, 75);
+    position:-ms-page;
+}
+@keyframes outputA {
+    from {height: 0px;
+          opacity: 0;}
+    to {visibility: visible;
+        display: flex;
+        height: auto;
+        background-color: aliceblue;
+        box-shadow: 2px 2px 10px whitesmoke;
+        border: 1px black;
+        border-radius: 7px;
+        padding: 5px;
+        flex-wrap:wrap;
+        text-overflow: clip;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+}
+.outputA , #charCount {
+    animation-name: outputA;
+    animation-fill-mode: forwards;
+    animation-duration: .9s;
+    animation-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.submit {
+        align-self: center;
+        background-color: white;
+        margin-top: 10px;
+        align-content: space-between;
+        margin: 2px;
+        
+}
+.formCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.lineOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    margin-top: 10px;
+}
+
+input, button {
+    border-style: none;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 5px whitesmoke;
+    align-content: center;
+}
+.header {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 10px whitesmoke;
+    border-radius: 0px 0px 10px 10px ;
+}

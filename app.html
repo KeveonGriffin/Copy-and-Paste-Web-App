@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BLAZEDCOPY</title>
+    <head>
+        <link rel="stylesheet" href="app.css">
+    </head>
+<body>
+    <div class="header">
+    <h1 id="title">Text Line Generator</h1>
+    </div>
+  <div class="formCon">
+    <h3>Enter text:</h3>
+        <input type="text" id="input" title="text">
+    <h3>Enter a number of copies:</h3>
+        <input type="number" id="copies" title="copies">
+    </div>
+    <div class="lineOption">
+        <button onclick="displayInput(); startAni(); charCount()" class="submit">Line Break</button>
+        <button onclick="displayInputNoBR(); startAni(); charCount()" class="submit">No Break</button>
+        <button onclick="displayInputList(); startAni(); charCount()" class="submit">Numbered</button>
+    </div>
+        <p id="output"></p>
+        <p id="charCount">Character Count: </p>
+
+</body>
+<script defer src="app.js" defer></script>
+</html>
